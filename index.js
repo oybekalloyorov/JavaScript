@@ -138,8 +138,19 @@ console.log(randomson);
 
 // 1 - 999 gacha sonlar berilgan. Shu oraliqdan bittasini olib, uni juft
 // yoki toq va Bir, ikki, uch xonali ekanligini ekranga chiqaring?
+// let a = 24;
+// let b = 67;
+// console.log((a==b) ? "Ha" : "yoq");//ternry operatori
 
+function summ(son1, son2,son3){
+    return son1 + son2 + son3; 
+}
 
+console.log(summ(12,45,78));
+console.log(summ(1,69,85));
+console.log(summ(12,13,78));
+console.log(summ(1000,83,78));
+console.log(summ(12,1264,123));
 
-
-
+// vazifa
+// 1-100 Kiritilgan sonlarni matn holatiga o'tkazuvchi dastur 
