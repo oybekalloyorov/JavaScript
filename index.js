@@ -252,5 +252,38 @@ function summ(son1, son2,son3){
 // console.log("Birinchi doira yuzi: = ",doiraYuzi1);
 // console.log("Ikkinchi doira yuzi: = ",doiraYuzi2);
 
+// dars 5
+
+// masala 16
+let x=5.41,y=6.49,c1;
+let surat = x + y;
+let maxraj = y*y + Math.abs((y*y +2) / (x + (x ** 3) / 5));
+let logorifm = Math.exp(y+2);
+c1 = surat / maxraj + logorifm;
+// console.log(c1.toFixed(2));
+
+// masala 17
+// x=1.7; y=5.18;
+// surat = 2 * Math.tan(x+Math.PI/6);
+// maxraj = (1 / 3) + Math.pow((Math.cos(y + x * x)),2);
+// let son3 = Math.log2((x * x) + 2);
+// let f1 = surat / maxraj + son3;
+
+// let x=3.15,y=0.44, surat, maxraj, son3;
+// surat = 1 / (x + (2 / x ** 2) + (3 / x ** 3)) + Math.exp(x*x + 3*x);
+// maxraj = Math.atan(x + y) + Math.abs(Math.pow((x+5), 2));
+// son3 = Math.pow(Math.cos(y ** 2 + (x ** 2) / 2), 2);
+// let f2 = surat / maxraj - son3;
+// console.log( f2.toFixed(2) );
+// let a = 64;
+// console.log( Math.pow(a, 0.5), " <=") ;
+
+// masala 22
+let c=2, d=3, x1=7.99,x2=0.72, surat, maxraj, son3;
+surat = Math.pow((Math.sin(Math.abs(c*(x2 ** 3) + d * (x1 ** 3) - c*d))),2);
+maxraj = Math.pow(((c*x1*x1 + d*x2*x2 +5) + 2), 0.5);
+son3 = Math.tan(x1 * x2*x2 + d ** 3);
+let F = Math.abs(surat / maxraj) + son3;
+console.log(F.toFixed(2));
 
 
