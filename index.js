@@ -255,11 +255,11 @@ function summ(son1, son2,son3){
 // dars 5
 
 // masala 16
-let x=5.41,y=6.49,c1;
-let surat = x + y;
-let maxraj = y*y + Math.abs((y*y +2) / (x + (x ** 3) / 5));
-let logorifm = Math.exp(y+2);
-c1 = surat / maxraj + logorifm;
+// let x=5.41,y=6.49,c1;
+// let surat = x + y;
+// let maxraj = y*y + Math.abs((y*y +2) / (x + (x ** 3) / 5));
+// let logorifm = Math.exp(y+2);
+// c1 = surat / maxraj + logorifm;
 // console.log(c1.toFixed(2));
 
 // masala 17
@@ -279,11 +279,70 @@ c1 = surat / maxraj + logorifm;
 // console.log( Math.pow(a, 0.5), " <=") ;
 
 // masala 22
-let c=2, d=3, x1=7.99,x2=0.72, surat, maxraj, son3;
-surat = Math.pow((Math.sin(Math.abs(c*(x2 ** 3) + d * (x1 ** 3) - c*d))),2);
-maxraj = Math.pow(((c*x1*x1 + d*x2*x2 +5) + 2), 0.5);
-son3 = Math.tan(x1 * x2*x2 + d ** 3);
-let F = Math.abs(surat / maxraj) + son3;
-console.log(F.toFixed(2));
+// let c=2, d=3, x1=7.99,x2=0.72, surat, maxraj, son3;
+// surat = Math.pow((Math.sin(Math.abs(c*(x2 ** 3) + d * (x1 ** 3) - c*d))),2);
+// maxraj = Math.pow(((c*x1*x1 + d*x2*x2 +5) + 2), 0.5);
+// son3 = Math.tan(x1 * x2*x2 + d ** 3);
+// let F = Math.abs(surat / maxraj) + son3;
+// console.log(F.toFixed(2));
 
+//                                           Function 
+// // console.log("Hello");
+// // function declaretion
+// oqish();
+// function oqish(){
+//     console.log("O'qi");
+// }
+// // function expression
+// // yozish(); //error
+// let yozish = function(){
+//     console.log("Yozish => yozish2");
+    
+// }
+// let yozish2 = yozish;
+// yozish2();
+let name = "Abrorbek"; //global
+let ism = "Muhammadali"; // global
+function salomlashish(firstName, lastName){
+    let ism = "Shohruh"; //local
+    console.log("Assalomu Aleykum " + name +" "+ ism);
+}
+// salomlashish(name);
+// salomlashish(ism, familiya); //error
+// let name2 = "Bahodir"
+// salomlashish(name2)
+
+// function greet(firstName, lastName){
+//     console.log("Assalomu Aleykum " + firstName +" "+ lastName);
+// }
+//  ism = "Oybek";
+// let familiya = "Alloyorov"
+// greet(ism,familiya);
+
+
+function yigindi(son1, son2){
+    return son1 + son2;
+    
+}
+
+let ss = yigindi(45,63);
+// console.log(ss);
+
+// console.log( yigindi(12,6));
+// console.log( yigindi(15,6));
+// console.log( yigindi(122,6));
+// console.log( yigindi(182,586));
+
+
+let a=5,b=6;
+function katta(x,y){
+    if(x > y){
+        console.log("katta ", x);
+    }else{
+        console.log("kichik ", y);
+    }
+}
+katta(8,2);
+daraja(8,3);
+minimum(x1,x2)
 
