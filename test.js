@@ -146,7 +146,7 @@ const Tortburchak = {
 // let yuza = Tortburchak.yuza(4,5)
 // console.log(perimetr, yuza); 
 // console.log(Tortburchak.perimetr(8,6)); 
-
+// &&
 /* console.log(Tortburchak.perimetr(4,5)); */
 
 
@@ -171,6 +171,49 @@ const Tortburchak = {
 // kub sigimini topish
 // uchburchak
 // va boshqa kopburchallarga doir metodlar yaratib ulardan foydalaning
+
+// Takrorlash 2.41 1.92 2.41 7.91 masala 42
+let a=2.41,b=1.92,c=2.41,d=7.91;
+function funksiya(a,b,c,d){
+    if((a <= b)&&(b <= c)&&(c <= d)){
+        a=d;
+        b=d;
+        c=d;
+        return d;
+    }else {
+        let minimum = Math.min(a,b,c,d);
+        b=minimum;
+        c=minimum; 
+        d=minimum;
+        a=minimum;
+        return minimum;
+    }
+    
+}
+let result = funksiya(a,b,c,d);
+// console.log(result);
+// masala 47
+// let x=0.03,y;
+// if(x <= 1){
+//     y = -x;
+// }else if(x > 1 && x <= 2){
+//     y = 1;
+// }else{
+//     y = //x= 2 y = 1
+//         //x= 3 y= -1
+// }
+
+// masala 38 0.54 0.09 1.64 || 1.29 1.5 0.16
+let x1=1.29, x2=1.5, x3=0.16;
+if(x1<=3 && x1 >= 1){
+    console.log(x1);
+}
+if(x2<=3 && x2 >= 1){
+    console.log(x2);
+}
+if(x3<=3 && x3 >= 1){
+    console.log(x3);
+}
 
 
 
