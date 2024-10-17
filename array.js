@@ -11,7 +11,7 @@ car.push(true);
 // console.log(car[2]);
 // for(let i = 0; i <= car.length-1; i++){
 //     console.log(car[i], " => ", i);
-// }
+// } 
 // for (let element of car){
 //     console.log(element);
 // }
@@ -149,20 +149,82 @@ for(let i = 0; i < massiv106.length; i++){
 }
 // console.log(kvadratYigindi);
 // masala 104
-const mass104 = [8,37,42,64,16,7,40,12,13,21,24,11,98];
-let minnn = mass104[0], index=0;
-for(let i = 0; i < mass104.length; i++){
-    if(mass104[i] < minnn){
-        index = i;
-        minnn = mass104[i];
-    }
+// const mass104 = [8,37,42,64,16,7,40,12,13,21,24,11,98];
+// let minnn = mass104[0], index=0;
+// for(let i = 0; i < mass104.length; i++){
+//     if(mass104[i] < minnn){
+//         index = i;
+//         minnn = mass104[i];
+//     }
+// }
+// mass104[index] = mass104[mass104.length-1]
+// mass104[mass104.length-1] = minnn;
+// console.log(mass104);
+
+////////////////////////////////////////// Arrays Methods
+let son = [-5,0,9,7,11,4,3];
+function sum(x){
+    console.log(x*2);  
 }
-mass104[index] = mass104[mass104.length-1]
-mass104[mass104.length-1] = minnn;
-console.log(mass104);
+// function filtered(arr){
+//     let newMassiv =[];
+//     for (const element of arr) {
+//         if(element > 0){
+//             newMassiv.push(element);
+//         }
+//     }
+//     return newMassiv;
+// }
+// console.log(filtered(son));
+
+// let filtered = son.filter(value => value > 0);
+// let masevry = son.every(value => value >= 0);
+// let massome = son.some(value => value >= 10);
+// let rediuced = son.reduce((acc, value) => (acc += value),0);
+
+// let average = rediuced / son.length;
+
+// let mapped = son.map((value, index, arr) => value*5)
+// sum(filtered);
+// let newForEach = son.forEach((x, index, arr) => console.log(x," ",index,));
 
 
+// console.log(newForEach);
 
+
+////////////////////////////////
+let number = [5,2,-1,5,6,8,-6,10];
+let newnumber = [];
+// for(let i = 0; i < number.length; i++){
+//     if(number[i] > 0){
+//         newnumber.push(element);
+//     }
+// }
+// for (const element of number) {
+//     if(element > 0){
+//         newnumber.push(element);
+//     }
+// }
+// let numberEvry = number.every(value => value > 0);
+// let numbersome = number.some(x => x < 8);
+// function filtered(arr){
+//     let boshFiltered = [];
+//     for (const element of arr) {
+//         if(element > 8){
+//             boshFiltered.push(element);
+//         }
+//     }
+//     return boshFiltered;
+// }
+let filtered = number.filter(value => (value % 2 == 0))
+                     .map((value,index) => value * index)
+                     .filter(value => value > 6);
+
+// let foreachNumber = number.forEach((value, index) => console.log(value, " ", index));
+
+let reduced = number.reduce((acc, value) => (acc *= value),0);
+
+console.log(reduced);
 
 
 
