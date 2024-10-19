@@ -222,15 +222,144 @@ let filtered = number.filter(value => (value % 2 == 0))
 
 // let foreachNumber = number.forEach((value, index) => console.log(value, " ", index));
 
-let reduced = number.reduce((acc, value) => (acc *= value),0);
+// let reduced = number.reduce((acc, value) => (acc *= value),0);
 
-console.log(reduced);
+// console.log(reduced);
+// //////////////////////////////////////////////////Massivni davomi va siqllar
+// for while dowhile
+// for(let i = 0; i<=100; i++){
+//     console.log(i);
+    
+// }
+// for(let i = 100; i>=50; i--){
+//     console.log(i);
+// }
+
+// let i = 11
+// while(i <= 10){
+//     console.log(i);
+//     i++;
+// }
+// let i = 5;
+// do{
+//     console.log("i=>",i);
+//     i++;
+// }while(i < 10)
+
+// let arr = [2,5,6,8,9];
+// for (const element of arr) {
+//     console.log(element);
+    
+// }
+
+// let object = {
+//     name: "Akmalbek",
+//     age: 16,
+//     telRaqam: "9912345646"
+// }
+// console.log(object.age);
+
+// for (let i in object) {
+//    console.log(object.values[name]);
+   
+// }
+
+// let person1 =[
+//     {
+//         name: "Akmalbel",
+//          age: 16},
+//     {
+//         name:"MahmudAli",
+//         age: 17
+//     },
+//     {
+//         name: "Tohirjon",
+//          age: 18
+//     },
+//     {
+//         name: "Shahriyor", age: 19
+//     }
+// ]
+// for (const element of person1) {
+//     console.log(element.name ," ", element.age);
+    
+// }
+// console.log(person1.name);
 
 
+// for(let i = 10; i>0; i--){
+//     console.log(i);
+    
+// }
+// i = 11;
+// while(i<=10){
+//     console.log(i);
+//     i++;
+    
+// }
+// j = 100;
+// while(j>0){
+//     console.log(j);
+//     j--
+    
+// }
 
+//  i = 1000;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i <= 10)
+// let studentlar = [
+//     {
+//         name: "Muhammad",
+//         age: 16,
+//         telRaqam: "5456461"
+//     },
+//     {
+//         name: "Elmurod",
+//         age: 17,
+//         telRaqam: "4654535"
+//     },
+//     {
+//         name: "fksdjvhkduhfkul",
+//         age: 20,
+//         telRaqam: "213454"
+//     }
+// ]
+// let yoshYigindi = 0;
+// for (const element of studentlar) {
+//     // console.log(element.name, element.age, element.telRaqam);
+//     yoshYigindi += element.age
+// }
+// console.log(yoshYigindi);
 
+// Masala siql 93
 
-
+let x=1,y=1,a=2,b=2;
+let surat = 0,maxraj = 1, S = 0;
+for (let k=1; k <= x; k++){
+    surat = (((k ** 2) * Math.sin(k)) + 5);
+    maxraj = Math.pow(((k ** 7) + 1), 0.2);
+    S += (surat / maxraj);
+}
+surat = 0; maxraj = 1;
+let P1 = 1;
+for(let n = 1; n <= y; n++){
+    surat = n + (n ** 0.5);
+    maxraj = n - Math.pow((n+1), 0.2);
+    P1 *= surat/maxraj;
+}
+surat = 0; maxraj = 1; 
+let SP = 0; P = 1;
+for(let k = 1; k <= a; k++){
+    for(let i = 1; i <= b; i++){
+        surat =  i*i + Math.pow((k*k), i);
+        maxraj = (Math.sin(i) + Math.cos(k)) * (i ** k);
+        P *= surat / maxraj;
+    }
+    SP += P;
+}
+console.log(S.toFixed(2), P1.toFixed(2), SP.toFixed(2));
 
 
 
