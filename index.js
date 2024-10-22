@@ -383,7 +383,7 @@ function yigindi(son1, son2){
     
 }
 
-let ss = yigindi(45,63);
+// let ss = yigindi(45,63);
 // console.log(ss);
 
 // console.log( yigindi(12,6));
@@ -561,3 +561,96 @@ if(x2<=3 && x2 >= 1){
 if(x3<=3 && x3 >= 1){
     console.log(x3);
 }
+
+//////////////////////// Massiv va siqllar ustida amallar bajarish
+// Masala siql 93
+
+let x=1,y=1,a=2,b=2;
+let surat = 0,maxraj = 1, S = 0;
+for (let k=1; k <= x; k++){
+    surat = (((k ** 2) * Math.sin(k)) + 5);
+    maxraj = Math.pow(((k ** 7) + 1), 0.2);
+    S += (surat / maxraj);
+}
+surat = 0; maxraj = 1;
+let P1 = 1;
+for(let n = 1; n <= y; n++){
+    surat = n + (n ** 0.5);
+    maxraj = n - Math.pow((n+1), 0.2);
+    P1 *= surat/maxraj;
+}
+surat = 0; maxraj = 1; 
+let SP = 0; P = 1;
+for(let k = 1; k <= a; k++){
+    for(let i = 1; i <= b; i++){
+        surat =  i*i + Math.pow((k*k), i);
+        maxraj = (Math.sin(i) + Math.cos(k)) * (i ** k);
+        P *= surat / maxraj;
+    }
+    SP += P;
+}
+// console.log(S.toFixed(2), P1.toFixed(2), SP.toFixed(2));
+
+// alert("Hello World!");
+// let confm = confirm("Yoshingiz 18 dan kattami?");
+// let promp = prompt("Ismingiz kiriting:")
+// console.log(promp);
+let answer = [];
+let questions = [
+    "Ismingiz kiriting:",
+    "Telefon raqamingizni kiriting:",
+    "Yoshingizni kiritng:",
+    "Yashash manzilingizni kiriting"
+]  
+// for(let i = 0; i < questions.length; i++){
+//     answer[i] = prompt(questions[i]);
+// }
+// console.log(answer);
+
+//////////////////////////////////////
+// alert("Salom Bolalar");
+// let conf1 = confirm("Siz studentmisiz?");
+// // console.log(conf1);
+// if(conf1){
+//     console.log("Ertaga sizga yangi dars qoyildi");
+    
+// }else{
+//     console.log("siz student emassiz?");
+    
+// }
+
+let propt1 = prompt("Son kiriting");
+for(let i = 0; i <= propt1;i+=2){
+    console.log(i);
+    
+}
+// if(propt1 === 18){
+//     console.log("Siz oqishga topshira olasiz!");
+    
+// }else{
+//     console.log("Sizga oqishga toshirishga ruhsat berilmagan");
+    
+// }
+// if(propt1 < 18){
+//     console.log("Siz yoshingiz kichik");
+    
+// }else if(propt1 > 18 && propt1 <= 60){
+//     console.log("sizga ruhsat berildi");
+    
+// }else{
+//     console.log("siz juda qarisiz!");
+    
+// }
+// console.log(propt1);
+// let answer1 = [];
+// let questions1 = [
+//     "Ismingizni kiriting:",
+//     "Yoshingizni kiriting:",
+//     "O'qish joyingizni kiriting"
+
+// ]
+// for(let item = 0; item < questions1.length; item++){
+//     answer1[item] = prompt(questions1[item]);
+// }
+// console.log(answer1);
+
