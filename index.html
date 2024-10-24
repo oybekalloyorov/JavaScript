@@ -8,5 +8,209 @@
 <body>
     <h1>Hello World</h1>
     <script src="array.js">  </script>   
+    <h1 id="obj" >Hello World</h1>
+        <p id="obj1"></p>
+    
+    <ul id="demo"></ul>
+    <!-- <script src="index.js">  </script>  -->
+    <script src="index.js" >  
+//         let arr = ['olma', "limon", "apelsin","uzum", "nok"];
+//         let text = "";
+//         // for(let i = 0; i < arr.length; i++){
+//         //     text += "<li>" + arr[i] + "</li>";   
+//         // }
+//         arr.push("Behi");
+//         arr.push("gilos");
+//         arr["10"] = "shaftoli";
+//         arr.forEach(myFunction);
+//         function myFunction(value){
+//             text += "<li>" + value + "</li>";
+//         }
+        
+// console.log(arr.length);
+// console.log(arr);
+
+// document.getElementById("demo").innerHTML = text;
+// console.log(Array.isArray(text));
+        // const obj = {
+        //     name: "Oybek",
+        //     age: 27,
+        //     cars: [
+        //         {carName: "Mersedez", model:["Mers", "mers1","mers2"]},
+        //         {carName: "BYD", model:["Yii2", "chempion","Chazor"]},
+        //     ]
+        // }
+        // let x="", y="";
+        // for(let i in obj.cars){
+        //     x += "<H1>"+obj.cars[i].carName+"</H1>";
+        // //    console.log(obj.cars[i].carName);
+        //     for (let j in obj.cars[i].model){
+        //         x += obj.cars[i].model[j] + "<br>"; 
+        //     //    console.log(obj.cars[i].model[j]);
+        //     }
+        //     console.log(x);
+        //     x += "<br>";
+        //     console.log(y);
+        // }
+        // // document.getElementById("obj").innerHTML = x;
+        // document.getElementById("obj1").innerHTML = x;
+
+    //     let arr = ['olma', "limon", "apelsin","uzum", "nok"];
+    //     let massiv = ["Car1", "Car2","car3"];
+    //    console.log(arr);
+       
+    //     console.log(arr.pop());
+    //     console.log(arr);
+    let a=2.41,b=1.92,c=2.41,d=7.91;
+    if ((a <= b) && (b<=c) && (c<=d)){
+        a=d;
+        b=d;
+        c=d;
+    }else{
+        b=a;
+        c=a;
+        d=a;
+    }
+    // console.log(a,b,c,d);
+    
+    // let array = [1,2,3,4,5];
+    // let letters = ["a", "b", "c", "a", "d", "l", "a", "b"];
+    // let count = {};
+    // letters.forEach(item => {
+    //     if(count[item]){
+    //         count[item]++;
+    //     }else{
+    //         count[item] = 1;
+    //     }
+    //     console.log(count);
+        
+    // })
+    // array.forEach((item,index,arr) => {
+    //     console.log(item, " => ", index, " = ", arr);     
+    // });
+
+    // let number = [
+    // {
+    //     name: "Laptop",
+    //     price: 1500,
+    //     count: 2,
+    // },{
+    //     name: "phone",
+    //     price: 1000,
+    //     count: 5,  
+    // },{
+    //     name: "Desktop",
+    //     price: 3000,
+    //     count: 10,
+    // }];
+  
+    // let resultNumber = number.map((item) => {
+    //     return item.price * item.count;
+    // });
+    // function mapNumber(value, index, number){
+    //     return value*index;   
+    // } 
+    // console.log(resultNumber);
+    
+    // let numbers = [1,2,3,4,5];
+    // let nums = numbers.reduce((accumilator,value) => 
+    //     accumilator+value,
+    // );
+    // console.log(nums);
+    function info(){
+        console.log(this);
+        
+    }
+    const person = {
+        name: "Oybek",
+        age: 27,
+        job: "dev",
+        personInfo: function(number){
+            console.group(`${this.name} info:`)
+            console.log(this.name);
+            console.log(this.age);
+            console.log(this.job);   
+            console.log(`contat number is: ${number}`);
+            console.groupEnd()         
+        },      
+    }
+    const frontent = {
+        name: "bekzod",
+        age: 20,
+        job: "frontent dev",
+       
+    }
+        // person.personInfo();
+        // person.personInfo.bind(frontent)("995491097");
+        // person.personInfo.call(frontent,"99754910-97");
+        // person.personInfo.apply(frontent,["99754910-97"]);
+
+        // let numbers = [2,-3,5,1,-4];
+        // let items = numbers.filter(number => number >= 0).map(number => {
+        //     return  number;
+        // });
+        // console.log(items);
+        
+        ///////////////////////////////////////////////
+        // evey,some,filter,map, reduce, arrow function
+
+        let mas = [1,5,6,9];
+        let son = 8;
+        function double(x){
+            console.log(x*2);    
+        }
+        let mas1 = [3,5,1,6,9].reduce(function doubleEvery(x){
+            // console.log(x);
+            
+            return x*2 
+        });
+        let mas2 = [3,5,1,6,12].reduce((acc, value) =>
+            acc += value
+        );
+        // [1,2,3,4,5].forEach((x,index) => console.log(x*2," ",index));
+        // console.log(mas2);
+
+
+        ////////////////////////////////// string
+        // console.log(String.fromCharCode(104,101,108,108,111));
+        // function reverse(string) {
+        // let strRev = "";
+        // for (var i = string.length - 1; i >= 0; i--) {
+        // strRev += string[i];
+        // }
+        // return strRev;
+        // }
+        // console.log(reverse("zebra"));
+        const person1 = [
+            {
+                name: "oybek",
+                age: 26
+            },
+            {
+                name: "Behruzbek",
+                age: 19
+            }
+            
+        ]
+        // for (const element of person1) {
+        //     console.log(element.age);
+            
+        // }
+        let test = {
+            name: "Toshmat",
+            age: 15,
+            telRaqam: 1231546,
+            yashashJoyi: "jfndvvjkdnsfvkj"
+        }
+        // for(let item in test){
+        //     console.log(item, test[item]); 
+        // }
+        // alert("Hello World!");
+        // let confm = confirm("yoshingiz 18 dan kattami");
+        // let propt = prompt("Ismingizni kiriting:");
+        // console.log(propt);
+        
+
+    </script>  
 </body>
 </html>
