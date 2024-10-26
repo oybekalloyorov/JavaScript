@@ -96,7 +96,7 @@ const futboll = {
 let txt = "Hello world!";
 // console.log(txt.toUpperCase());
 // console.log(txt.toLowerCase());
-console.log(txt.indexOf("w"));
+// console.log(txt.indexOf("w"));
 
 
 
@@ -106,6 +106,98 @@ console.log(txt.indexOf("w"));
 // futboll.score[c] = d;
 // console.log( futboll);
 
-let x = prompt("Ixtiyoriy sonni kiriting:");
-console.log(parseFloat(x));
+// let x = prompt("Ixtiyoriy sonni kiriting:");
+// console.log(parseFloat(x));
+
+
+                // Object distributizatsiya
+// const thief = {
+//     height: 1.85,
+//     jacket: "red",
+//     color: {
+//         hair: "black",
+//         eyeColor: "blue"
+//     }
+// }
+
+// const {hair, eyeColor} = thief.color;
+// const hair = thief.color.hair;
+// const eyeColor = thief.color.eyeColor;
+// console.log(hair);
+// console.log(eyeColor);
+
+// let newObj = thief;
+// newObj.height = 2;
+// console.log(thief);
+// console.log(newObj);
+
+// const numbers ={
+//     x: 10,
+//     y: 5,
+// }
+// const addNumber ={
+//     z: 15,
+// }
+// const allNumbers = Object.assign(numbers, addNumber);
+// numbers.x = 20;
+
+// console.log(allNumbers);
+// console.log(numbers);
+
+// let arr = ["Oybek",2,3,3,5];
+
+// let newArr = arr.slice();//arr copy
+// newArr[0] = "Shohruh";
+// console.log(arr);
+// console.log(newArr);
+
+
+// let newArr = arr;
+// newArr[0] = "Muhammad";
+// console.log(arr);
+// console.log(newArr);
+
+// const realM = ["Mpape", "Vinisius"];
+// const Barsa = ["Yamal"];
+
+// const mixPlayer = [...realM, ...Barsa];
+// console.log(mixPlayer);
+
+// const numbers = [1,2,3];
+
+// function saver(x,y,z){
+//     console.log(x+y+z);
+// }
+// saver(...numbers);
+
+// const arr = ["x", "y"];
+// const newArr = [...arr]
+// console.log(newArr);
+
+const car = {
+    motor: "X",
+    color: "red",
+    rusumi: ["GM", "BYD", "BMW"],
+    isAirbag: true,
+    isSpeed: function(){
+        console.log(100);  
+    },
+}
+const gm = {
+    isAirbag: false,
+}
+
+// Object.setPrototypeOf(gm, car);
+const bmw = Object.create(car);
+bmw.motor = "Y";
+console.log(bmw);
+console.log(car);
+
+
+// gm.__proto__ = car;
+// console.log(gm.rusumi);
+// console.log(gm.isSpeed());
+
+
+
 
