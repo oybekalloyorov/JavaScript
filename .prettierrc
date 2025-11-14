@@ -1,4 +1,11 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "prettier.semi":true,
+  "prettier.useTabs":true,
+  "prettier.formatOnSave":true,
+  "prettier.formatOnPaste":true,
+  "prettier.singleQuote":true,
+  "prettier.jsSingleQuote":true,
+  "prettier.arrowParens": "avoid"
 }
